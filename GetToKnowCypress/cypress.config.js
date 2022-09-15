@@ -10,6 +10,13 @@ module.exports = defineConfig({
           specPattern: "cypress/e2e/session1/**/*.cy.js"
         }
       }
+      else if (config.env.ENVIRONMENT == "session2"){
+        return {
+          baseUrl: "https://www.saucedemo.com/",
+          specPattern: "cypress/e2e/session2/**/*.cy.js",
+          chromeWebSecurity: false
+        }
+      }
 
     },
   },
