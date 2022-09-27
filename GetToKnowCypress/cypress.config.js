@@ -14,7 +14,22 @@ module.exports = defineConfig({
         return {
           baseUrl: "https://www.saucedemo.com/",
           specPattern: "cypress/e2e/session2/**/*.cy.js",
-          chromeWebSecurity: false
+          chromeWebSecurity: false,
+          screenshotsFolder: "cypress/screenshots",
+          videosFolder: "cypress/videos"
+        }
+      }
+      else if (config.env.ENVIRONMENT == "session3"){
+        return {
+          baseUrl: "https://www.saucedemo.com/",
+          specPattern: "cypress/e2e/session3/**/*.cy.js",
+          chromeWebSecurity: false,
+          screenshotsFolder: "cypress/screenshots",
+          videosFolder: "cypress/videos",
+          env :{
+            seconUser: 'locked_out_user',
+            secondPass: 'secret_sauce'
+          }
         }
       }
 

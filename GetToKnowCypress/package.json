@@ -2,6 +2,7 @@
     "scripts":{
         "cypress:open_session1": "npx cypress open --env ENVIRONMENT=session1",
         "cypress:open_session2": "npx cypress open --env ENVIRONMENT=session2",
-        "cypress:run_session2": "npx cypress run --env ENVIRONMENT=session2"
+        "cypress:run_session2": "npx cypress run --env ENVIRONMENT=session2",
+        "cypress:open_session3": "npx cypress open --env ENVIRONMENT=session3"
     }
 }
